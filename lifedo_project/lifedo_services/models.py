@@ -15,6 +15,16 @@ class TaskModel(models.Model):
         (U, 'Неважно')
     ]
 
+    C = 'Завершено'
+    P = 'В процессе'
+    F = 'Заброшено'
+
+    COMPLETION_CHOICES = [
+        (C, 'Завершено'),
+        (P, 'В процессе'),
+        (F, 'Заброшено')
+    ]
+
     class Meta:
         db_table = "tasks"
         verbose_name = "задачу"
@@ -45,8 +55,13 @@ class TaskModel(models.Model):
     employers = models.ManyToManyField(
         User,
         blank=True,
-        null=True,
         verbose_name="Сотрудники"
+    )
+    progress = models.CharField(
+        max_length=len(P),
+        choices=COMPLETION_CHOICES,
+        default=P,
+        verbose_name="Состояние"
     )
 
     def __str__(self):
