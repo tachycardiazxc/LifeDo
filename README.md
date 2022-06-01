@@ -26,8 +26,8 @@ python manage.py runserver
 
 <h3>MVP:</h3>
 <ul>
-    <li>Users</li>
-    <li>Tasks</li>
+    <li><S>Users</S></li>
+    <li><S>Tasks</S></li>
     <li>Simple UI</li>
 </ul>
 
