@@ -24,19 +24,23 @@ python manage.py runserver
 ---
 
 <h3>MVP:</h3>
-* Users
-* Tasks
-* Simple UI
+<ul>
+    <li>Users</li>
+    <li>Tasks</li>
+    <li>Simple UI</li>
+</ul>
 
 ---
 
 <h3>Todo:</h3>
-* Companies
-* Departments
-* Projects
-* Employers
-* Chats
-* Deadlines
-* Priorities
-* Notifications
-* API
+<ul>
+    <li>Companies</li>
+    <li>Departments</li>
+    <li>Projects</li>
+    <li>Employers</li>
+    <li>Chats</li>
+    <li>Deadlines</li>
+    <li>Priorities</li>
+    <li>Notifications</li>
+    <li>API</li>
+</ul>
