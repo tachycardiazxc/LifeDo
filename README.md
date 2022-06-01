@@ -8,6 +8,7 @@
 ---
 
 <h3>Installation:</h3>
+
 1) Download the project and unpack it
 2) Open cmd and move to the project folder
 3) In cmd:
