@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LifeDo</title>
+    <link rel="stylesheet" href="{% static 'css/index_beauty.css' %}/?1">
+</head>
+ <body>
+ <div id="Top-Of-Page"></div>
+   <!-- Beginning of Fixed Navigation Bar -->
+  <nav id="Navbar">
+      <div id="Initial-Signature">
+        <a href="#Top-Of-Page"><button><span style="font-size: 25px;"><strong>LifeDo</strong></span><br><span><em>Plan Everything</em></span></button></a>
+      </div>
+    <div id="Projects-Nav-Link">
+      <a href="" class="disabled"><button class="Navbar-Button">Задачи</button></a>
+    </div>
+    <div id="Navbar-Drop-Down">
+      <button class="Navbar-Button" id="Drop-Down-Button">Профиль<span>▼</span></button>
+        <div class="Drop-Down-Content">
+            {% if request.user.is_authenticated %}
+          <li><a href="" class="disabled"><button class="Navbar-Button">Профиль</button></a></li>
+          <li><a href="{% url 'logout' %}"><button class="Navbar-Button">Выйти</button></a></li>
+            {% else %}
+          <li><a href="{% url 'login' %}"><button class="Navbar-Button">Войти</button></a></li>
+            {% endif %}
+        </div>
+    </div>
+  </nav>
+ <!-- End of Fixed Navigation Bar -->
+
+ <div id="Entire-Page-Container">
+ <!-- Beginning of Introduction/Home Page Content -->
+  <div id="Welcome-Page-Container">
+  <div id="Welcome-Page-Content">
+    <h1>LifeDo<br id="Desktop-br"> Планируйте <br id="Cellphone-br"> с легкостью </h1><p>Всё и всегда</p>
+    <a href="#My-Projects-Container"><button id="Explore-My-Work-Button">Краткий обзор</button></a>
+  </div>
+  </div>
+ <!-- End of Introduction/Home Page Content -->
+
+ <!-- Beginning of Projects Section -->
+  <div id="My-Projects-Container">
+    <header id="Projects-Header">
+      <h1>Ваши возможности с нами</h1>
+    </header>
+ <!-- Beginning of grid containing project images, links, overlays -->
+   <div id="Project-Link-Container">
+    <div class="Project-Link">
+        <div class="Project-Overlay-Container">
+          <div class="Project-Overlay-Text">
+            <p> Задачи<br><span><em>Создавайте множество задач</em></span></p>
+          </div>
+         </div>
+        <img class="Project-Img-Links" id="Tribute-Page-Project-Img" src='{% static 'img/checklist-512.webp' %}'/></a>
+     </div>
+
+    <div class="Project-Link">
+        <div class="Project-Overlay-Container">
+          <div class="Project-Overlay-Text">
+            <p>Приоритеты <br class="Project-Title-Br"><br><span><em>Задавайте свои приоритеты задачам</em></span></p>
+          </div>
+        </div>
+        <img class="Project-Img-Links" id="Survey-Form-Project-Page" src='{% static 'img/dynamics-512.webp' %}' /></a>
+      </div>
+
+    <div class="Project-Link">
+        <div class="Project-Overlay-Container">
+          <div class="Project-Overlay-Text">
+            <p>Дедлайны<br class="Project-Title-Br"><br><span><em>Ставьте дедлайны задачам</em></span></p>
+          </div>
+        </div>
+        <img class="Project-Img-Links" id="Landing-Page-Project-Img" src='{% static 'img/deadline_stopwatch_timer_schedule-512.webp' %}' /></a>
+     </div>
+
+    <div class="Project-Link">
+        <div class="Project-Overlay-Container">
+          <div class="Project-Overlay-Text">
+            <p>Команды<br class="Project-Title-Br"><br><span><em>Работайте над ними в команде</em></span></p>
+          </div>
+        </div>
+        <img class ="Project-Img-Links" id="Technical-Documentation-Project-Img" src='{% static 'img/166-1660423_computer-icons-team-work-team-icon-png.png' %}' /></a>
+     </div>
+    </div>
+   </div>
+ <!-- End of grid containing project images, links, overlays -->
+ <!-- End of Projects Section -->
+
+ <!-- Beginning of Contact Section -->
+    <div id="Contact-Page-Container">
+      <div id="Contact-Links-Ul-Container">
+ <!-- Beginning of UL containing all contact links and logos -->
+      <ul id="Contact-Links-Ul">
+        <li><a href="https://github.com/devourmealive/LifeDo" target="_blank"><img class="Contact-Links-Img" id="GitHub-Logo" src="{% static 'img/GitHub-Mark-64px.png' %}" alt=""/></a></li>
+      </ul>
+ <!-- End of UL containing all contact links and logos -->
+    </div>
+
+
+      <hr id="Footer-hr">
+
+ <!-- Beginning of page footer with credits to creator and images -->
+      <div class="Footer-And-Credits">
+      <p>Проект был создан и написан <a href = "https://github.com/devourmealive/"><strong>Качусовым Владиславом</strong></a>, исключительно для ознакомительного просмотра в целях демонстрации способностей<br><br><em></em><br><br> Frontend был взят по кускам с <a href="https://codepen.io" target="_blank"><strong>codepen</strong></a></p>
+      </div>
+ <!-- End of page footer with credits to creator and images -->
+    </div>
+ <!-- End of Contact Section -->
+  </div>
+</body>
+
+</html>
