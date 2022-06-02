@@ -63,6 +63,11 @@ class TaskModel(models.Model):
         default=P,
         verbose_name="Состояние"
     )
+    expired = models.BooleanField(
+        default=False,
+        verbose_name="Истек срок исполнения?",
+        editable=False
+    )
 
     def __str__(self):
         return f"{self.id} {self.title}"
