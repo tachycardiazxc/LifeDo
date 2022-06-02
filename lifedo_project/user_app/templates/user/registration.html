@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{% static 'css/beauty.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="testbox">
+  <h1>Регистрация</h1>
+
+  <form method="post">
+      {% csrf_token %}
+      <hr>
+{#    <div class="accounttype">#}
+{#      <input type="radio" value="None" id="radioOne" name="account" checked/>#}
+{#      <label for="radioOne" class="radio" chec>Personal</label>#}
+{#      <input type="radio" value="None" id="radioTwo" name="account" />#}
+{#      <label for="radioTwo" class="radio">Company</label>#}
+{#    </div>#}
+{#      <hr>#}
+  <label id="icon" for="name"><i class="icon-user"></i></label>
+      {{ creation_form.username }}
+  <label id="icon" for="name"><i class="icon-user"></i></label>
+      {{ creation_form.first_name }}
+  <label id="icon" for="name"><i class="icon-user"></i></label>
+      {{ creation_form.last_name }}
+  <label id="icon" for="name"><i class="icon-envelope "></i></label>
+      {{ creation_form.email }}
+  <label id="icon" for="name"><i class="icon-shield"></i></label>
+      {{ creation_form.password1 }}
+  <label id="icon" for="name"><i class="icon-shield"></i></label>
+      {{ creation_form.password2 }}
+
+{#   <button type="submit" class="button">Регистрация</button>#}
+   <input type="submit" class="button" value="Регистрация">
+  </form>
+</div>
+</body>
+</html>

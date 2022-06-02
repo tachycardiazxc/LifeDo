@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'lifedo_services.apps.LifedoServicesConfig',
     'user_app.apps.UserAppConfig',
+    'index_app.apps.IndexAppConfig'
 ]
 
 MIDDLEWARE = [

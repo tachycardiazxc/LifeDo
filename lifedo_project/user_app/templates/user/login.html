@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="{% static 'css/beauty.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="testbox">
+  <h1>Вход</h1>
+
+  <form method="post">
+      {% csrf_token %}
+      <hr>
+{#    <div class="accounttype">#}
+{#      <input type="radio" value="None" id="radioOne" name="account" checked/>#}
+{#      <label for="radioOne" class="radio" chec>Personal</label>#}
+{#      <input type="radio" value="None" id="radioTwo" name="account" />#}
+{#      <label for="radioTwo" class="radio">Company</label>#}
+{#    </div>#}
+{#      <hr>#}
+  <label id="icon" for="name"><i class="icon-user"></i></label>
+      {{ authentication_form.username }}
+  <label id="icon" for="name"><i class="icon-shield"></i></label>
+      {{ authentication_form.password }}
+
+{#   <button type="submit" class="button">Регистрация</button>#}
+   <input type="submit" class="button_new" value="Вход">
+   <a class="button" href="{% url 'register' %}">Регистрация</a>
+  </form>
+</div>
+{{ creation_form.errors }}
+</body>
+</html>
