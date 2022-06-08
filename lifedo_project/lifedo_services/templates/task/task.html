@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задачи</title>
+    <link rel="stylesheet" href="{% static 'css/index_beauty.css' %}/?11">
+</head>
+<body>
+
+<div id="Top-Of-Page"></div>
+   <!-- Beginning of Fixed Navigation Bar -->
+  <nav id="Navbar">
+      <div id="Initial-Signature">
+        <a href="{% url 'index' %}"><button><span style="font-size: 25px;"><strong>LifeDo</strong></span><br><span><em>Plan Everything</em></span></button></a>
+      </div>
+    <div id="Projects-Nav-Link">
+      <a href="{% url 'tasks' %}" class=""><button class="Navbar-Button">Задачи</button></a>
+    </div>
+    <div id="Navbar-Drop-Down">
+      <button class="Navbar-Button" id="Drop-Down-Button">Профиль<span>▼</span></button>
+        <div class="Drop-Down-Content">
+            {% if request.user.is_authenticated %}
+          <li><a href="" class="disabled"><button class="Navbar-Button">Профиль</button></a></li>
+          <li><a href="{% url 'logout' %}"><button class="Navbar-Button">Выйти</button></a></li>
+            {% else %}
+          <li><a href="{% url 'login' %}"><button class="Navbar-Button">Войти</button></a></li>
+            {% endif %}
+        </div>
+    </div>
+  </nav>
+</body>
+</html>

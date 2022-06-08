@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeDo</title>
-    <link rel="stylesheet" href="{% static 'css/index_beauty.css' %}/?1">
+    <link rel="stylesheet" href="{% static 'css/index_beauty.css' %}/?11">
 </head>
  <body>
  <div id="Top-Of-Page"></div>
@@ -14,7 +14,7 @@
         <a href="#Top-Of-Page"><button><span style="font-size: 25px;"><strong>LifeDo</strong></span><br><span><em>Plan Everything</em></span></button></a>
       </div>
     <div id="Projects-Nav-Link">
-      <a href="" class="disabled"><button class="Navbar-Button">Задачи</button></a>
+      <a href="{% url 'tasks' %}" class=""><button class="Navbar-Button">Задачи</button></a>
     </div>
     <div id="Navbar-Drop-Down">
       <button class="Navbar-Button" id="Drop-Down-Button">Профиль<span>▼</span></button>

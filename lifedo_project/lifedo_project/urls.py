@@ -22,7 +22,8 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('user_app.urls')),
-    path('', include('index_app.urls'))
+    path('', include('index_app.urls')),
+    path('services/', include('lifedo_services.urls')),
 ]
 
 if settings.DEBUG:

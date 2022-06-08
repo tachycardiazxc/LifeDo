@@ -37,15 +37,15 @@ html, body{
   border: none;
   color: white;
   background: transparent;
-  width: 100px;
+  width: 125px;
   height: 60px;
   cursor: pointer;
 }
 
-#Initial-Signature:hover{
-  animation: Signature-Wiggle 1s 1 ease-in-out;
-  animation-fill-mode: forwards;
-}
+/*#Initial-Signature:hover{*/
+/*  animation: Signature-Wiggle 1s 1 ease-in-out;*/
+/*  animation-fill-mode: forwards;*/
+/*}*/
 
 #Navbar{
   position: sticky;
@@ -55,7 +55,7 @@ html, body{
   right: 0;
   height: 60px;
   width: 100%;
-  max-width: 1346px;
+  max-width: 1920px;
   background-color: rgba(50,76,115,1);
   z-index: 3;
 }
@@ -171,7 +171,7 @@ html, body{
   margin: 0 auto;
   height: 830px;
   width: 100%;
-  max-width: 1346px;
+  max-width: 1920px;
   min-width: 300px;
   font-family: 'Josefin Sans';
   color: white;
@@ -231,7 +231,7 @@ html, body{
   position: relative;
   height: 800px;
   width: 100%;
-  max-width: 1346px;
+  max-width: 1920px;
   min-width: 300px;
   background: rgba(210,210,210,1);
   margin: 0 auto;
@@ -340,7 +340,7 @@ html, body{
   min-height: 175px;
   margin: 0 auto;
   min-width: 300px;
-  max-width: 1346px;
+  max-width: 1920px;
   padding-top: 30px;
   padding-bottom: 40px;
   background: rgba(50,76,115,1);

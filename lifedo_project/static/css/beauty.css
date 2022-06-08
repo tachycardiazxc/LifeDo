@@ -170,6 +170,7 @@ input.button {
   transition: all 0.1s linear 0s;
   top: 0px;
   position: relative;
+  border: 0px;
 }
 
 input.button:hover {
@@ -201,6 +202,7 @@ input.button_new {
   transition: all 0.1s linear 0s;
   top: 0px;
   position: relative;
+  border: 10px;
 }
 
 input.button_new:hover {
