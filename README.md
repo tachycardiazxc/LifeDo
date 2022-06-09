@@ -3,7 +3,10 @@
 ---
 
 <h3>Python requirements:</h3>
-* Python 3.8
+
+<ul>
+    <li>Python 3.8</li>
+</ul>
 
 ---
 
@@ -44,4 +47,13 @@ python manage.py runserver
     <li>Priorities</li>
     <li>Notifications</li>
     <li>API</li>
+</ul>
+
+---
+
+<h3>Currently used stack:</h3>
+<ul>
+    <li>Django</li>
+    <li>PostgresSQL</li>
+    <li>Bootstrap</li>
 </ul>
