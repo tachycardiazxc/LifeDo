@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Задачи</title>
-    <link rel="stylesheet" href="{% static 'css/index_beauty.css' %}/?11">
+    <link rel="stylesheet" href="{% static 'css/index_beauty.css' %}/?1111">
 </head>
-<body>
+<body class="tasks-body">
 
 <div id="Top-Of-Page"></div>
    <!-- Beginning of Fixed Navigation Bar -->
@@ -15,7 +15,7 @@
         <a href="{% url 'index' %}"><button><span style="font-size: 25px;"><strong>LifeDo</strong></span><br><span><em>Plan Everything</em></span></button></a>
       </div>
     <div id="Projects-Nav-Link">
-      <a href="{% url 'tasks' %}" class=""><button class="Navbar-Button">Задачи</button></a>
+      <a href="{% url 'tasks' %}" class="disabled"><button class="Navbar-Button">Задачи</button></a>
     </div>
     <div id="Navbar-Drop-Down">
       <button class="Navbar-Button" id="Drop-Down-Button">Профиль<span>▼</span></button>
@@ -29,5 +29,19 @@
         </div>
     </div>
   </nav>
+<div class="tasks-container">
+    <main class="tasks-main">
+      <h1 class="h-main-tasks">Задача</h1>
+      <div class="main-tasks-content">
+      <p>...</p>
+      </div>
+    </main>
+    <nav class="tasks-nav">
+      <h4 class="h-nav-tasks">Tasks</h4>
+
+      <p>...</p>
+    </nav>
+  </div>
+</div>
 </body>
 </html>

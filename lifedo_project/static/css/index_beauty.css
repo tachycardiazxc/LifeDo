@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 html, body{
-  background: url('https://lh3.googleusercontent.com/QzmoI4DbybydhzZb_bruxfbnT8mo5FgdvatQd8a5CEDAkmN0iXYdHjvHmCJNjwyVYyXz2a8u8P8_Cs_isxENVTaTcly3ZKN797kscCSB0gpFs-iyWdXIMDJBAIO2WupUcZTawO0Ur9k8rsWkOz6arpwQMx-vQPGOjje-TddwG_nsIIpIp3l3Oub9S9v09tBAMSAOd8F-VqGBS0GtIdmvxlDAwK8T2do0pA6DiTX8lS3Vd9QjqKhg8By0ZNulKMCDld-WWu3rfSbWFOSyXGt3HDFzk4OYc4vP2_I7RGibTUlhAr-tud3jTNUZsscdgkzcI2BsLf0oBZTCXOqRBQAffVhisIOpTiAJK-g8ruiHS22VokfzJPO4fw0rmOMVE-PP7Eqk1ya_xMO4xuB6hq_2xqxisYrSY7xUUTudu1ZEPFR6KNPQAy1GdqyXDk4PjqK9kC8DPINgD6TPTVWg8zTQcUp5x5P4sWVwpA_0FJo6ZZ1FAbLHK0u272Im5j2oqZEdNRYdbIkH-h_ofN8H7142rL2r9WJAAfRadJztqtjVwtqdS8FYEjBRUSULDwVL6MWG-kkgh8WCg0iFNBvUJOWztBVaujQFnkyagqoTIH4HRaZM9OuW7YlRq66CEwojxLp0Iw-qz7Cw4owH-0feO2jBkhUt58jSj8g=w1136-h757-no');
   background-position: center left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,6 +57,7 @@ html, body{
   max-width: 1920px;
   background-color: rgba(50,76,115,1);
   z-index: 3;
+  border-bottom: 2px solid rgba(50,75,105,1);
 }
 
 #Navbar-Drop-Down{
@@ -125,6 +125,7 @@ html, body{
   position: absolute;
   top: 0px;
   z-index: -1;
+  border: black 2px;
 }
 /* Makes drop down menu links invisible until hovered over */
 .Drop-Down-Content li{
@@ -505,4 +506,55 @@ a.disabled
 
   /* for "disabled" effect */
   opacity: 0.5;
+}
+
+.tasks-body{
+  background: gainsboro;
+}
+
+.tasks-container {
+  display: flex;
+  flex: 1;
+  padding-top: 5px;
+}
+
+.tasks-main {
+  display: grid;
+  flex: 1;
+  background: rgba(50,75,115,1);
+  box-shadow: white;
+  max-width: 1075px;
+  margin-left: 100px;
+  border-radius: 5px;
+}
+
+.h-main-tasks{
+  display: grid;
+  justify-content: center;
+  color: white;
+}
+
+.main-tasks-content{
+  display: grid;
+  color: white;
+  justify-items: center;
+  justify-content: space-around;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 330px 330px;
+}
+
+.tasks-nav {
+  flex: 0 0 200px;
+  padding: 0 10px;
+  margin-left: 10px;
+  order: -1;
+  background: rgba(50,75,115,1);
+  border-radius: 5px;
+}
+
+.h-nav-tasks{
+  display: grid;
+  justify-items: center;
+  color: white;
+  margin-top: 5px;
 }
