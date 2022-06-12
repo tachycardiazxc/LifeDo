@@ -2,7 +2,7 @@
 
 ---
 
-<h3>Python requirements:</h3>
+<h3>Python requirements version:</h3>
 
 <ul>
     <li>Python 3.8</li>
