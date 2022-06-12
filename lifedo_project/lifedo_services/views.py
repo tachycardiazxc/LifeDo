@@ -14,7 +14,7 @@ class TaskView(views.View):
         tasks = TaskModel.objects.filter(employers=user)
         each_task_form = []
         for task in tasks:
-            each_task_form.append(TaskForm(instance= task))
+            each_task_form.append(TaskForm(instance=task))
         return render(request, template_name='task/task.html', context={
             'tasks_form': each_task_form
         })
